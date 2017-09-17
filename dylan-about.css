@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 5px 10px;
+    padding: 0 0;
+}
+
+body {
+    margin-left: 22px;
+    min-width: 315px;
+    width: 100%;
+}
+
+h1, .logo {
+    font-family: "Lato", "Verdana", sans-serif;
+}
+
+header a {
+    font-family: "Alegreya Sans", "Verdana", sans-serif;
+}
+
+header {
+    border-bottom: 3px solid black;
+    position: absolute;
+    width: 75%;
+}
+
+.logo {
+    color: black;
+    float: left;
+    font-size: 3em;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.nav a {
+    color: black;
+    float: right;
+    padding: .5rem .3rem;
+    position: relative;
+    text-decoration: none;
+    top: 1.5rem;
+}
+
+nav a:hover {
+    color: coral;
+    transition: ease-in .2s;
+}
+
+.about {
+    position: relative;
+    margin: 1rem 3rem;
+    top: 7rem;
+}
+
+.about h1 {
+    font-size: 2em;
+}
+
+.about img {
+    float: left;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+.about span {
+    display: flex;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 775px) {
+    body {
+        margin: 0 0;
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .logo {
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav a {
+        display: block;
+        padding-top: .3rem;
+        text-align: center;
+        top: 0;
+        width: 100%;
+    }
+
+    .about {
+        top: 20rem;
+    }
+
+    .about img {
+        float: initial;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}
