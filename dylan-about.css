@@ -10,7 +10,7 @@ body {
     width: 100%;
 }
 
-h1, .logo {
+h1, h2, .logo {
     font-family: "Lato", "Verdana", sans-serif;
 }
 
@@ -54,6 +54,10 @@ nav a:hover {
 
 .about h1 {
     font-size: 2em;
+}
+
+.about h2 {
+    font-size: 1.1em;
 }
 
 .about img {
