@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
-    margin: 5px 10px;
+    margin: 0 0;
     padding: 0 0;
 }
 
 body {
-    margin-left: 22px;
+    margin: 5px auto;
     min-width: 315px;
     width: 100%;
 }
@@ -20,8 +20,9 @@ header a {
 
 header {
     border-bottom: 3px solid black;
+    margin: 0 4rem;
     position: absolute;
-    width: 75%;
+    width: 80%;
 }
 
 .logo {
@@ -84,7 +85,7 @@ nav a:hover {
 
 @media screen and (max-width: 775px) {
     body {
-        margin: 0 auto;
+        margin: 0;
         width: 100%;
     }
 
@@ -107,6 +108,7 @@ nav a:hover {
 
     .about {
         top: 20rem;
+        width: 100%;
     }
     
     .about h1 {
@@ -131,5 +133,6 @@ nav a:hover {
     body {
         max-width: 1024px;
         margin: 0 auto;
+        width: 100%;
     }
 }
