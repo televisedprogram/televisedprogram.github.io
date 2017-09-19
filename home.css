@@ -6,9 +6,13 @@ html, body {
 /* BODY STYLES */
 body {
     background-color: #FA7878;
-    font-family: "Lato", "Verdana", "sans-serif";
+    font-family: "Source Sans Pro", "Helvitica", "sans-serif";
     color: #F5F5F5;
     margin: 0 auto;
+}
+
+h1, h2, p, a { 
+    font-family: "Source Sans Pro", "Helvetica", "sans-serif";
 }
 
 .content {
@@ -24,6 +28,7 @@ h1 {
 
 p {
     font-size: 1.5em;
+    line-height: 1.4;
 }
 
 /* SECTION STYLES */
