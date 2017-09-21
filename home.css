@@ -23,7 +23,6 @@ h1, h2, p, a {
 
 h1 {
     font-size: 2em;
-    /* text-shadow: beige; */
 }
 
 p {
@@ -31,8 +30,14 @@ p {
     line-height: 1.4;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
 /* SECTION STYLES */
-.projects > article {
+.projects article {
     display: inline-table;
     width: 40%;
     padding: 1rem;
@@ -45,19 +50,19 @@ article:hover {
     background-color: #49718A;
 }
 
-article > img {
+.projects img {
     display: block;
     margin: auto;
     width: 75%;
 }
 
-article > h2, article > p {
+.projects h2, .projects p {
     width: 70%;
     margin: auto;
     text-align: center;
 }
 
-article > p {
+.projects p {
     font-size: 1.5em;
 }
 
@@ -87,13 +92,14 @@ header div a {
 
 nav a {
     font-size: 1.4rem;
-    color: white;
-    text-decoration: none;
-    padding: 0 1rem;
 }
 
 .logo {
     font-weight: 600;
+}
+
+.menu-button {
+    visibility: hidden;
 }
 
 /* MEDIA QUERIES */
@@ -113,7 +119,7 @@ nav a {
         text-align: center;
     }
 
-    .projects > article {
+    .projects article {
         display: block;
         margin: 0 auto;
         width: 70%;
@@ -130,6 +136,19 @@ nav a {
 
     header div a {
         text-align: center;
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .menu-button {
+        display: block;
+        margin: 0 auto;
+        padding: 2% 5%;
+        background-color: white;
+        border-style: initial;
+        visibility: initial;
     }
 
 

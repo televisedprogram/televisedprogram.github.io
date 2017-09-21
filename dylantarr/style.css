@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY STYLES */
+body, header {
+    background-color: #FFF7F7;
+    margin: 0 auto;
+}
+
+h1, h2, a, p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+/* END BODY STYLES */
+
+/* SECTION STYLES */
+.articles {
+    position: absolute;
+    top: 200px;
+}
+
+.articles article > div {
+    display: inline-block;
+    /* width: 10%; */
+    text-align: center;
+    transition: ease .3s;
+}
+
+.articles article > div {
+    padding: 0;
+    margin: 0;
+}
+
+.articles h1 {
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: 800;
+}
+
+.articles img {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+.articles h2 {
+    text-align: center;
+    color: black;
+
+    transition: ease .3s;
+}
+
+.articles article > div:hover {
+    background-color: rgba(0, 0, 0, .65);
+    transition: ease .3s;
+}
+
+.articles article > div:hover > h2 {
+    color: white;
+    transition: ease .3s;
+}
+
+/* END SECTION STYLES */
+
+/* HEADER STYLES */
+header {
+    background-color: rgba(0, 0, 0, .85);
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    padding-bottom: .5rem;
+}
+
+header nav {
+    margin: 1rem auto;
+    max-width: 1024px;
+}
+
+div.nav-links {
+    float: right;
+}
+
+nav > div > a {
+    color: white;
+    opacity: initial;
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.logo-box {
+    float: left;
+}
+
+.logo {
+    font-size: 2.3em;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.sub-logo {
+    font-size: 1.1em;
+    display: block;
+    text-align: center; 
+    padding-left: 1.6rem;
+    width: 100%;
+}
+
+.nav-links {
+    top: 1.3rem;
+    position: relative;
+}
+
+.nav-links > a {
+    font-size: 1.1em;
+    padding: 0 1rem 0;
+    text-transform: uppercase;
+}
+
+/* END HEADER STYLES */
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 750px) {
+    body {
+        max-width: 1024px;
+    }
+}
