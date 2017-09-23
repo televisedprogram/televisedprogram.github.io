@@ -20,6 +20,9 @@ a:hover {
 }
 
 /* SECTION STYLES */
+.intro {
+    border-bottom: 5px solid black;
+}
 .intro span {
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
@@ -56,17 +59,22 @@ a:hover {
     width: 100%;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    margin: 0 auto;
+    margin-top: -.25em;
+    text-align: right;
 }
 
 .contact a {
-    text-align: right;
+    padding: 0 1rem 0;
+}
+
+.contact img {
+    width: 1em;
 }
 
 /* HEADER STYLES */
 header {
     background-color: white;
-    border-bottom: 5px solid rgba(0, 0, 0, 0.7);
+    border-bottom: 5px solid black;
     position: fixed;
     width: 100%;
     margin: 0 auto;
@@ -83,9 +91,19 @@ header {
 
 .menu-list {
     float: right;
+    bottom: .7rem;
+    position: relative;
 }
 
-.menu-list a {
+.menu-list a, .menu-list img {
     font-size: 1.5em;
     padding: 0 .7rem 0;
+}
+
+.github {
+    width: .8em;
+}
+
+.linkedin {
+    width: 1em;
 }
