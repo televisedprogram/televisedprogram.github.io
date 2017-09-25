@@ -20,7 +20,12 @@ a {
 
 /* SECTION STYLES */
 .articles {
-    margin-top: 8rem;
+    margin-top: 10rem;
+}
+
+.articles {
+    display: inline-block;
+    margin-left: 1rem;
 }
 
 .articles h1 {
@@ -28,11 +33,6 @@ a {
     font-size: 3.5em;
     font-weight: 800;
     margin-bottom: 2rem;
-}
-
-.articles {
-    display: block;
-    margin-left: 1rem;
 }
 
 .articles > div {
@@ -114,7 +114,7 @@ header nav {
     max-width: 1024px;
 }
 
-div.nav-links {
+.nav-links {
     float: right;
 }
 
@@ -165,14 +165,55 @@ nav > div > a {
     }
 }
 
-/* @media screen and (max-width: 750px) {
-    .articles > div {
-        width: 50%;
-        text-overflow: ellipsis;
+@media screen and (max-width: 750px) {
+    body {
+        width: 100%;
+        margin: 0;
+    }
+    header {
+        padding-bottom: 2rem;
+        text-align: center;
     }
 
-    .articles p {
-        font-size: 75%;
-        margin-right: .5rem;
+    .logo-box, .nav-links {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
     }
-} */
+
+    .logo {
+        font-size: 1.7em;
+    }
+
+    .sub-logo {
+        width: 100%;
+        padding: 0;
+    }
+
+    .sub-logo, .nav-links {
+        font-size: .9em;
+    }
+
+    .articles {
+        width: 100%;
+        margin: 10 0;
+    }
+    
+    .articles > div {
+        /* margin-left: 8%; */
+        width: 90%;
+        vertical-align: middle;
+    }
+
+    .articles > div:nth-child(even) {
+        clear: left;
+    }
+
+
+
+    .articles p {
+        font-size: .7em;
+        line-height: 1.5em;
+        height: 4.5em;
+    }
+}
