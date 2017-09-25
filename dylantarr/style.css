@@ -67,7 +67,6 @@ a {
     height: 4.5em;
     width: 90%;
     overflow-x: hidden;
-    white-space: nowrap;
     text-overflow: ellipsis;
 }
 
@@ -224,5 +223,6 @@ nav > div > a {
     .articles p {
         font-size: .7em;
         text-align: center;
+        white-space: nowrap;
     }
 }
