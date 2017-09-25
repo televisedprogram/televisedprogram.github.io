@@ -7,6 +7,7 @@
 body, header {
     background-color: #FFF7F7;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 h1, h2, a, p {
@@ -52,7 +53,8 @@ a {
 
 .articles figure {
     position: relative;
-    width: 90%;
+    width: 95%;
+    margin: 1rem;
 }
 
 .articles img {
@@ -127,7 +129,7 @@ nav > div > a {
 
 .logo-box {
     float: left;
-    margin-left: 1rem;
+    margin-left: 1.3rem;
 }
 
 .logo {
@@ -147,6 +149,7 @@ nav > div > a {
 .nav-links {
     top: 1.3rem;
     position: relative;
+    margin-right: 1.3rem;
 }
 
 .nav-links > a {
@@ -154,8 +157,6 @@ nav > div > a {
     padding: 0 1rem 0;
     text-transform: uppercase;
 }
-
-
 /* END HEADER STYLES */
 
 /* MEDIA QUERIES */
@@ -167,8 +168,7 @@ nav > div > a {
 
 @media screen and (max-width: 750px) {
     body {
-        width: 100%;
-        margin: 0;
+        min-width: 320px;
     }
     header {
         padding-bottom: 2rem;
@@ -193,27 +193,26 @@ nav > div > a {
     .sub-logo, .nav-links {
         font-size: .9em;
     }
-
+    
     .articles {
-        width: 100%;
-        margin: 10 0;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     .articles > div {
-        /* margin-left: 8%; */
-        width: 90%;
-        vertical-align: middle;
+        width: 65%;
+        /* margin-left: 2%; */
+        /* text-align: center; */
+        /* vertical-align: middle; */
     }
-
-    .articles > div:nth-child(even) {
-        clear: left;
-    }
-
-
 
     .articles p {
         font-size: .7em;
         line-height: 1.5em;
         height: 4.5em;
+        width: 85%;
     }
 }
