@@ -32,10 +32,11 @@ a {
 
 .articles {
     display: block;
+    margin-left: 1rem;
 }
 
 .articles > div {
-    width: 25%;
+    width: 33%;
     float: left;
     color: #fff;
     text-align: center;
@@ -73,7 +74,7 @@ a {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 95%;
+    height: 98%;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
@@ -126,6 +127,7 @@ nav > div > a {
 
 .logo-box {
     float: left;
+    margin-left: 1rem;
 }
 
 .logo {
@@ -153,6 +155,7 @@ nav > div > a {
     text-transform: uppercase;
 }
 
+
 /* END HEADER STYLES */
 
 /* MEDIA QUERIES */
@@ -161,3 +164,15 @@ nav > div > a {
         max-width: 1024px;
     }
 }
+
+/* @media screen and (max-width: 750px) {
+    .articles > div {
+        width: 50%;
+        text-overflow: ellipsis;
+    }
+
+    .articles p {
+        font-size: 75%;
+        margin-right: .5rem;
+    }
+} */
