@@ -6,8 +6,7 @@
 /* BODY STYLES */
 body {
     font-family: 'Cabin', sans-serif;
-    /* max-width: 1024px;
-    width: 100%; */
+    padding-bottom: 2rem;
 }
 
 a {
@@ -20,55 +19,87 @@ a:hover {
 }
 
 /* SECTION STYLES */
-.intro {
-    border-bottom: 5px solid black;
-}
-.intro span {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    padding-left: 1rem;
-}
-
 .intro img {
     background-position: center;
-    object-fit: cover;
+    background-size: cover;
     width: 100%;
 }
 
-.intro h1 {
+.intro-text {
+    position: absolute;
+    top: 1rem;
+    color: white;
+    font-weight: bold;
+    width: 50%;
+}
+
+.intro-text h1, .intro-text p {
+    background-color: rgba(0, 0, 0, .7);
+    box-decoration-break: clone;
+    display: inline;
+    padding: 1rem;
+}
+
+.intro-text h1 {
     position: absolute;
     top: 10rem;
     font-size: 2em;
 }
 
-.intro p {
+.intro-text p {
     position: absolute;
     top: 15rem;
     font-size: 1.5em;
     width: 40%;
-    line-height: 2.05em;
+    line-height: 1.4em;
+    padding-left: 1rem;
+    color: white;
+    width: 75%;
 }
 
-.intro p:last-child {
-    top: 18.05rem;
-}
-
-/* CONTACT STYLES */
-.contact {
-    width: 100%;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    margin-top: -.25em;
+.about h1, .projects h1 {
+    margin-top: 2rem;
+    font-size: 2em;
+    width: 40%;
     text-align: right;
 }
 
-.contact a {
-    padding: 0 1rem 0;
+.about h1::after, .projects h1::after {
+    content: "";
+    background-color: black;
+    height: 5px;
+    width: 100%;
+    display: block;
 }
 
-.contact img {
-    width: 1em;
+.about p {
+    margin: 1rem 0 0 25%;
+    width: 50%;
+    font-size: 1.2em;
+}
+
+.projects article {
+    border: 2px solid black;
+    width: 25%;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+    font-size: 1.2em;
+    padding-bottom: 1rem;
+}
+
+.projects a:nth-child(even) {
+    margin-left: 25%;
+}
+
+.projects img {
+    width: 70%;
+}
+
+.projects p {
+    width: 70%;
+    margin: 0 auto;
 }
 
 /* HEADER STYLES */
@@ -79,6 +110,7 @@ header {
     width: 100%;
     margin: 0 auto;
     z-index: 5;
+    top: 0;
 }
 
 .logo {
@@ -91,7 +123,7 @@ header {
 
 .menu-list {
     float: right;
-    bottom: .7rem;
+    bottom: .55rem;
     position: relative;
 }
 
@@ -106,4 +138,80 @@ header {
 
 .linkedin {
     width: 1em;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 750px) {
+    header {
+        text-align: center;
+    }
+
+    .menu-list {
+        top: .1rem;
+        text-align: center;
+        float: initial;
+    }
+
+    .logo {
+        top: 0;
+        font-size: 2em;
+        float: auto;
+    }
+
+    .menu-list a {
+        font-size: 1em;
+        line-height: 2em;
+    }
+
+    .intro img {
+        display: none;
+    }
+
+    .intro-text {
+        display: none;
+    }
+
+    .about h1 {
+        margin-top: 10rem;
+    }
+
+    .about h1, .projects h1 {
+        width: 70%;
+    }
+
+    .about p {
+        width: 90%;
+        margin: 1rem;
+        text-align: center;
+    }
+    
+    .projects article {
+        text-align: center;
+        display: block;
+        margin: 1rem auto;
+        width: 90%;
+    }
+
+    .projects img {
+        width: 40%;
+    }
+
+}
+
+@media screen and (min-width: 750px) {
+    body {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    header { 
+        top: 0;
+        left: 0;
+    }
+    
+    nav {
+        max-width: 1024px;
+        margin: 0 auto;
+        width: 100%;
+    }
 }
