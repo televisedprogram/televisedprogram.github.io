@@ -20,50 +20,79 @@ a {
 
 /* SECTION STYLES */
 .articles {
-    position: absolute;
-    top: 200px;
-}
-
-.articles article > div {
-    display: inline-block;
-    /* width: 10%; */
-    text-align: center;
-    transition: ease .3s;
-}
-
-.articles article > div {
-    padding: 0;
-    margin: 0;
+    margin-top: 8rem;
 }
 
 .articles h1 {
     text-align: center;
     font-size: 3.5em;
     font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.articles {
+    display: block;
+}
+
+.articles > div {
+    width: 25%;
+    float: left;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.articles a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.articles figure {
+    position: relative;
+    width: 90%;
 }
 
 .articles img {
-    display: block;
-    margin: auto;
-    width: 50%;
+    width: 100%;
 }
 
-.articles h2 {
+.articles p {
     text-align: center;
-    color: black;
-
-    transition: ease .3s;
+    margin-right: 2rem;
+    line-height: 1.5em;
+    height: 3em;
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
-.articles article > div:hover {
-    background-color: rgba(0, 0, 0, .65);
-    transition: ease .3s;
-}
-
-.articles article > div:hover > h2 {
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 95%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, .85);
+  }
+  
+  .articles a:hover .overlay {
+    opacity: 1;
+  }
+  
+  .link-text {
     color: white;
-    transition: ease .3s;
-}
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* -ms-transform: translate(-50%, -50%); */
+    text-transform: uppercase;
+  }
 
 /* END SECTION STYLES */
 
