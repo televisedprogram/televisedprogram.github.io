@@ -162,14 +162,14 @@ nav > div > a {
 .nav-links a {
     font-size: 1.1em;
     /* padding: 0 0 0; */
-    margin: 0 1rem 0;
+    padding: 0 1rem 0;
     text-transform: uppercase;
-    display: inline;
 }
 
 /* HEADER TRANSITIONS */
 nav div, .nav-links, .nav-links a {
     transition: .5s;
+    transition-delay: .1s;
 }
 nav:hover div, .nav-links:hover a {
     opacity: .25;
