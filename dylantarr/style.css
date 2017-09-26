@@ -168,18 +168,17 @@ nav > div > a {
 }
 
 /* HEADER TRANSITIONS */
-.logo-box ~ .nav-links, .nav-links a {
-    transition: .4s;
+nav div, .nav-links, .nav-links a {
+    transition: .5s;
 }
-
-.logo-box:hover ~ .nav-links, .nav-links:hover a {
-    transition: .2s;
+nav:hover div, .nav-links:hover a {
     opacity: .25;
+    transition: .3s;
 }
 
-.nav-links a:hover {
-    transition: .3s;
+nav div:hover, .nav-links a:hover {
     opacity: 1;
+    transition: .3s;
 }
 /* END HEADER STYLES */
 
