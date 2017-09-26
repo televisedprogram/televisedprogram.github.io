@@ -159,13 +159,28 @@ nav > div > a {
     margin-right: 1rem;
 }
 
-.nav-links > a {
+.nav-links a {
     font-size: 1.1em;
-    padding: 0 1rem 0;
+    /* padding: 0 0 0; */
+    margin: 0 1rem 0;
     text-transform: uppercase;
+    display: inline;
 }
 
+/* HEADER TRANSITIONS */
+.logo-box ~ .nav-links, .nav-links a {
+    transition: .4s;
+}
 
+.logo-box:hover ~ .nav-links, .nav-links:hover a {
+    transition: .2s;
+    opacity: .25;
+}
+
+.nav-links a:hover {
+    transition: .3s;
+    opacity: 1;
+}
 /* END HEADER STYLES */
 
 /* MEDIA QUERIES */
