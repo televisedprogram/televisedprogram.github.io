@@ -22,7 +22,7 @@ a {
 /* SECTION STYLES */
 .articles {
     /* margin-top: 10rem; */
-    margin: 10rem auto;
+    margin: 10rem auto 1rem;
     width: 100%;
     margin-left: 1rem;
 }
@@ -40,8 +40,7 @@ a {
     float: left;
     color: #fff;
     text-align: center;
-    margin-bottom: 2rem;
-    margin: 0 1% 0;
+    margin: 1rem 1% 0;
 }
 
 .articles a {
@@ -54,18 +53,21 @@ a {
 .articles figure {
     position: relative;
     width: 95%;
-    /* margin: 1rem; */
+    text-align: center;
 }
 
 .articles img {
     width: 100%;
 }
 
-.articles p {
+.articles h2 {
     text-align: center;
+    font-size: 1em;
+    font-weight: 800;
+    /* font-style: italic; */
     line-height: 1.5em;
     height: 4.5em;
-    width: 90%;
+    width: 95%;
     overflow-x: hidden;
     text-overflow: ellipsis;
 }
@@ -91,7 +93,7 @@ a {
     opacity: 1;
   }
   
-  .link-text {
+  .overlay-text {
     color: white;
     position: absolute;
     top: 50%;
@@ -204,25 +206,27 @@ nav > div > a {
     }
 
     .articles {
-        width: 90%;
+        width: 100%;
+        margin: 10 0;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .articles > div {
-        width: 47%;
-    }
-
-    .articles > div:nth-child(even) {
-        clear: left;
-        margin-left: .5rem;
+        width: 100%;
+        max-width: 340px;
     }
 
     .articles > div:nth-child(3n+2) {
         clear: none;
     }
 
-    .articles p {
-        font-size: .7em;
+    .articles h2 {
+        font-size: .9em;
         text-align: center;
-        white-space: nowrap;
+        font-weight: 600;
     }
 }
