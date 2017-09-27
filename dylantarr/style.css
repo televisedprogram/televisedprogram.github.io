@@ -7,7 +7,7 @@
 body, header {
     background-color: #FFF7F7;
     margin: 0 auto;
-    /* overflow-x: hidden; */
+    width: 100%;
 }
 
 h1, h2, a, p {
@@ -21,10 +21,9 @@ a {
 
 /* SECTION STYLES */
 .articles {
-    /* margin-top: 10rem; */
-    margin: 10rem auto 1rem;
+    margin: 11rem auto 1rem;
     width: 100%;
-    /* margin-left: 1rem; */
+    position: relative;
 }
 
 .articles h1 {
@@ -36,11 +35,15 @@ a {
 }
 
 .articles > div {
-    width: 30.83%;
+    width: 29%;
     float: left;
     color: #fff;
     text-align: center;
-    margin: 2rem 2% 0 0;
+    margin-left: 2.5%;
+}
+
+.articles > div:nth-child(3n+2) {
+    clear: both;
 }
 
 .articles a {
@@ -71,10 +74,6 @@ a {
     width: 95%;
     overflow-x: hidden;
     text-overflow: ellipsis;
-}
-
-.articles > div:nth-child(3n+2) {
-    clear: both;
 }
 
 .overlay {
@@ -127,6 +126,10 @@ header nav {
     float: right;
 }
 
+.nav-links a:last-child {
+    margin-right: 2rem;
+}
+
 nav > div > a {
     color: white;
     opacity: initial;
@@ -156,12 +159,11 @@ nav > div > a {
 .nav-links {
     top: 1.3rem;
     position: relative;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
 }
 
 .nav-links a {
     font-size: 1.1em;
-    /* padding: 0 0 0; */
     padding: 0 1rem 0;
     text-transform: uppercase;
 }
@@ -222,6 +224,11 @@ nav div:hover, .nav-links a:hover {
         margin: 0;
     }
 
+    .nav-links a {
+        padding-top: .5rem;
+        line-height: 2em;
+    }
+
     .articles {
         width: 100%;
         margin: 10 0;
@@ -235,6 +242,7 @@ nav div:hover, .nav-links a:hover {
     .articles > div {
         width: 100%;
         max-width: 340px;
+        margin-left: 1rem;
     }
 
     .articles > div:nth-child(3n+2) {
@@ -245,5 +253,9 @@ nav div:hover, .nav-links a:hover {
         font-size: .9em;
         text-align: center;
         font-weight: 600;
+    }
+
+    .nav-links a:last-child {
+        margin-right: 0;
     }
 }
