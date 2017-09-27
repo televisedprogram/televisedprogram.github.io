@@ -179,7 +179,8 @@ nav div:hover, .nav-links a:hover {
     }
 
     .nav-links a {
-        padding-top: .5rem;
+        padding-top: 0;
+        padding-bottom: 0;
         line-height: 2em;
     }
 
