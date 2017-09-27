@@ -141,10 +141,6 @@ header nav {
     max-width: 1024px;
 }
 
-.nav-links {
-    float: right;
-}
-
 .nav-links a:last-child {
     margin-right: 2rem;
 }
@@ -178,12 +174,13 @@ nav > div > a {
 .nav-links {
     top: 1.3rem;
     position: relative;
+    float: right;
     margin-right: 1.5rem;
 }
 
 .nav-links a {
     font-size: 1.1em;
-    padding: 0 1rem 0;
+    padding: 1rem 1rem;
     text-transform: uppercase;
 }
 
