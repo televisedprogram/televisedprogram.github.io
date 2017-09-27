@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY STYLES */
+body, header {
+    background-color: #FFF7F7;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1, a, p {
+    font-family: 'Muli', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+/* END BODY STYLES */
+
+/* SECTION STYLE */
+section {
+    margin: 11rem auto 1rem;
+    width: 100%;
+    position: relative;
+}
+/* END SECTION STYLE */
+
+/* HEADER STYLES */
+header {
+    background-color: rgba(0, 0, 0, .85);
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    padding-bottom: .5rem;
+}
+
+header nav {
+    margin: 1rem auto;
+    max-width: 1024px;
+}
+
+.nav-links {
+    float: right;
+}
+
+.nav-links a:last-child {
+    margin-right: 2rem;
+}
+
+nav > div > a {
+    color: white;
+    opacity: initial;
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.logo-box {
+    float: left;
+    margin-left: 1.5rem;
+}
+
+.logo {
+    font-size: 2.3em;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.sub-logo {
+    font-size: 1.1em;
+    display: block;
+    text-align: center; 
+    padding-left: 1.6rem;
+    width: 100%;
+}
+
+.nav-links {
+    top: 1.3rem;
+    position: relative;
+    margin-right: 1.5rem;
+}
+
+.nav-links a {
+    font-size: 1.1em;
+    padding: 0 1rem 0;
+    text-transform: uppercase;
+}
+
+/* HEADER TRANSITIONS */
+nav div, .nav-links, .nav-links a {
+    transition: .5s;
+    transition-delay: .1s;
+}
+nav:hover div, .nav-links:hover a {
+    opacity: .25;
+    transition: .3s;
+}
+
+nav div:hover, .nav-links a:hover {
+    opacity: 1;
+    transition: .3s;
+}
+/* END HEADER STYLES */

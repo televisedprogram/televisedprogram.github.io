@@ -11,7 +11,7 @@ body, header {
 }
 
 h1, h2, a, p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Muli', sans-serif;
 }
 
 a {
@@ -20,13 +20,13 @@ a {
 /* END BODY STYLES */
 
 /* SECTION STYLES */
-.articles {
+section {
     margin: 11rem auto 1rem;
     width: 100%;
     position: relative;
 }
 
-.articles h1 {
+section h1 {
     text-align: center;
     font-size: 3.5em;
     font-weight: 800;
@@ -34,7 +34,7 @@ a {
     width: 96%;
 }
 
-.articles > div {
+section > div {
     width: 29%;
     float: left;
     color: #fff;
@@ -42,28 +42,28 @@ a {
     margin-left: 2.5%;
 }
 
-.articles > div:nth-child(3n+2) {
+section > div:nth-child(3n+2) {
     clear: both;
 }
 
-.articles a {
+section a {
     text-decoration: none;
     color: black;
     font-size: 1.3em;
     font-weight: bold;
 }
 
-.articles figure {
+section figure {
     position: relative;
     width: 95%;
     text-align: center;
 }
 
-.articles img {
+section img {
     width: 100%;
 }
 
-.articles h2 {
+section h2 {
     text-align: center;
     font-size: 1em;
     font-weight: 800;
@@ -89,7 +89,7 @@ a {
     background-color: rgba(0, 0, 0, .85);
   }
   
-  .articles a:hover .overlay {
+  section a:hover .overlay {
     opacity: 1;
   }
   
@@ -104,6 +104,25 @@ a {
   }
 
 /* END SECTION STYLES */
+
+/* ARTICLE TEXT */
+.article-content {
+    width: 100%;
+}
+.article-content img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    background-size: cover;
+}
+.article-content p {
+    width: 80%;
+    line-height: 1.33em;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    margin-left: 8%;
+}
+/* END ARTICLE TEXT */
 
 /* HEADER STYLES */
 header {
@@ -229,7 +248,7 @@ nav div:hover, .nav-links a:hover {
         line-height: 2em;
     }
 
-    .articles {
+    section {
         width: 100%;
         margin: 10 0;
         width: 95%;
@@ -239,17 +258,17 @@ nav div:hover, .nav-links a:hover {
         align-items: center;
     }
 
-    .articles > div {
+    section > div {
         width: 100%;
         max-width: 340px;
         margin-left: 1rem;
     }
 
-    .articles > div:nth-child(3n+2) {
+    section > div:nth-child(3n+2) {
         clear: none;
     }
 
-    .articles h2 {
+    section h2 {
         font-size: .9em;
         text-align: center;
         font-weight: 600;
@@ -257,5 +276,9 @@ nav div:hover, .nav-links a:hover {
 
     .nav-links a:last-child {
         margin-right: 0;
+    }
+
+    .article-content h1 {
+        font-size: 2em;
     }
 }
