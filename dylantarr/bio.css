@@ -25,7 +25,45 @@ section {
     width: 100%;
     position: relative;
 }
+
+section h1 {
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    width: 96%;
+}
 /* END SECTION STYLE */
+
+/* BIO STYLE */
+.bio {
+    margin-left: auto;
+    width: 90%;
+}
+
+.bio img {
+    width: 30%;
+    float: left;
+    display: block;
+    margin-left: 10%;
+    margin-bottom: 2rem;
+}
+
+.bio .bio-text {
+    width: 40%;
+    padding-left: 44.5%;
+}
+
+.bio p {
+    line-height: 1.33em;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.bio p::first-line {
+    font-weight: 600;
+}
+/* END BIO STYLE */
 
 /* HEADER STYLES */
 header {
@@ -102,3 +140,80 @@ nav div:hover, .nav-links a:hover {
     transition: .3s;
 }
 /* END HEADER STYLES */
+
+/* FOOTER STYLES */
+.footer {
+    margin-top: 11rem;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
+.footer a {
+    color: black;
+}
+/* END FOOTER STYLES */
+
+/* MEDIA QUEIRIES */
+@media screen and (max-width: 750px) {
+    body {
+        min-width: 320px;
+    }
+
+    header {
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    .logo-box, .nav-links {
+        width: 100%;
+        text-align: center;
+        margin: .3rem auto 0;
+    }
+
+    .logo {
+        font-size: 1.7em;
+    }
+
+    .sub-logo {
+        width: 100%;
+        padding: 0;
+    }
+
+    .sub-logo, .nav-links {
+        font-size: .9em;
+    }
+
+    .nav-links {
+        margin: 0;
+    }
+
+    .nav-links a {
+        padding-top: .5rem;
+        line-height: 2em;
+    }
+
+    .nav-links a:last-child {
+        margin-right: 0;
+    }
+
+    .bio img {
+        width: 70%;
+        margin: 0 auto 2rem;
+    }
+
+    .bio .bio-text {
+        width: 100%;
+        padding: 0;
+        display: inline-block;
+    }
+
+    .bio p {
+        width: 100%;
+        display: block;
+    }
+}
