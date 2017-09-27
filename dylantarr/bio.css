@@ -5,7 +5,7 @@
 
 /* BODY STYLES */
 body, header {
-    background-color: #FFF7F7;
+    background-color: #FFF;
     margin: 0 auto;
     width: 100%;
 }
@@ -152,12 +152,12 @@ nav div:hover, .nav-links a:hover {
     bottom: 0;
     left: 0;
     padding: 1rem;
-    background-color: #efefef;
+    background-color: rgba(0, 0, 0, .85);
     text-align: center;
 }
 
 .footer a {
-    color: black;
+    color: white;
 }
 /* END FOOTER STYLES */
 
