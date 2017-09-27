@@ -188,15 +188,18 @@ nav > div > a {
 nav div, .nav-links, .nav-links a {
     transition: .5s;
     transition-delay: .1s;
+    transform: translateZ(0);
 }
 nav:hover div, .nav-links:hover a {
     opacity: .25;
     transition: .3s;
+    transform: translateZ(0);
 }
 
 nav div:hover, .nav-links a:hover {
     opacity: 1;
     transition: .3s;
+    transform: translateZ(0);
 }
 /* END HEADER STYLES */
 
