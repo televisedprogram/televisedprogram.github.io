@@ -206,8 +206,10 @@ nav div:hover, .nav-links a:hover {
     }
 
     .bio img {
-        width: 70%;
-        margin: 0 auto 2rem;
+        margin: 1rem auto;
+        text-align: center;
+        float: initial;
+        width: 65%;
     }
 
     .bio .bio-text {
