@@ -195,4 +195,10 @@ nav div:hover, .nav-links a:hover {
     .resume p {
         width: 80%;
     }
+
+    .resume a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 }
