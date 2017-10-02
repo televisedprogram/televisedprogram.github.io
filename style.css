@@ -132,13 +132,14 @@ header::after {
     }
 
     .content {
-        top: 6rem;
+        top: 7.5rem;
         margin: auto;
         padding: 0 .5rem;
     }
 
     .new-section h1 {
         text-align: center;
+        margin-bottom: .8rem;
     }
 
     .new-section h2, h3 {
