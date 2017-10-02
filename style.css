@@ -161,6 +161,8 @@ header::after {
 
     .date {
         font-size: .8em;
+        line-height: initial;
+        
     }
 
     .skills span {
@@ -170,12 +172,22 @@ header::after {
 
 @media print {
     body {
-        font-size: 13px;
+        font-size: 15px;
         margin: auto;
     }
 
     header::after {
         -webkit-print-color-adjust: exact;
     }
+
+    .new-section p, .new-section ul {
+        margin-top: 0;
+        line-height: 1em;
+    }
+
+    .new-section {
+        margin-top: 1%;
+    }
+
 }
 /* END MEDIA QUERIES */
