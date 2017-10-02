@@ -156,7 +156,11 @@ header::after {
         margin: auto;
         font-size: .9em;
         width: 90%;
-        margin-top: 1.25rem;
+        margin-top: .5rem;
+    }
+    
+    .new-section ul {
+        margin-top: 2rem;
     }
 
     .date {
