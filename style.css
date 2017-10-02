@@ -9,12 +9,12 @@ body {
     background-color: #EBEEF3;
 }
 h1, h2, h3 {
-    font-family: "Roboto", "Verdana", sans-serif;
+    font-family: "Muli", "Verdana", sans-serif;
     font-weight: normal;
 }
 
 p, li, .date, .skills span {
-    font-family: "EB Garamond", "Palatino", serif;
+    font-family: "Crimson Text", "Palatino", serif;
 }
 
 ul {
