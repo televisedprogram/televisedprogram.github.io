@@ -103,25 +103,6 @@ section h2 {
 
 /* END SECTION STYLES */
 
-/* ARTICLE TEXT */
-.article-content {
-    width: 100%;
-}
-.article-content img {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    background-size: cover;
-}
-.article-content p {
-    width: 80%;
-    line-height: 1.33em;
-    font-weight: 300;
-    margin-bottom: 1rem;
-    margin-left: 8%;
-}
-/* END ARTICLE TEXT */
-
 /* CONTACT TEXT */
 .contact-text {
     color: black;
