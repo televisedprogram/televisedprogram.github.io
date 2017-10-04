@@ -49,6 +49,11 @@ section h1 {
     margin: 1rem auto .5rem;
 }
 
+.resume h3 span {
+    font-weight: 400;
+    font-style: italic;
+}
+
 .resume p {
     margin-left: 1rem;
     width: 80%;
