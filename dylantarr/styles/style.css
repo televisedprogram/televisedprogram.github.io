@@ -122,6 +122,15 @@ section h2 {
 }
 /* END ARTICLE TEXT */
 
+/* CONTACT TEXT */
+.contact-text {
+    color: black;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+    margin: 4rem 0 0 -1rem;
+}
+/* END CONTACT TEXT */
 
 
 /* MEDIA QUERIES */
