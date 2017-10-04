@@ -59,10 +59,6 @@ section h1 {
     font-weight: 300;
     margin-bottom: 1rem;
 }
-
-.bio p::first-line {
-    font-weight: 600;
-}
 /* END BIO STYLE */
 
 /* HEADER STYLES */
