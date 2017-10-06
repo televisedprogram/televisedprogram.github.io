@@ -86,11 +86,11 @@ section h2 {
     transition: .5s ease;
     background-color: rgba(0, 0, 0, .7);
   }
-  
+
   section a:hover .overlay {
     opacity: 1;
   }
-  
+
   .overlay-text {
     color: white;
     position: absolute;
@@ -154,9 +154,5 @@ section h2 {
 
     .nav-links a:last-child {
         margin-right: 0;
-    }
-
-    .article-content h1 {
-        font-size: 2em;
     }
 }
