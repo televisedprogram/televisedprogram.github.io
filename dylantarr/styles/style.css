@@ -151,8 +151,4 @@ section h2 {
         text-align: center;
         font-weight: 600;
     }
-
-    .nav-links a:last-child {
-        margin-right: 0;
-    }
 }
