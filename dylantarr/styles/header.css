@@ -19,6 +19,26 @@ nav a {
   color: white;
 }
 
+.show-menu {
+  display: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Muli', sans-serif;
+}
+
+#menu {
+  -webkit-appearance: none;
+}
+
+input[type=checkbox]{
+  display: none;
+  -webkit-appearance: none;
+}
+
+input[type=checkbox]:checked ~ #menu{
+  display: block;
+}
+
 .nav-links {
   cursor: pointer;
 }
@@ -93,37 +113,60 @@ nav div:hover, .nav-links li:hover {
 /* MEDIA QUERIES */
 @media screen and (max-width: 750px) {
     header {
-        padding-bottom: 2rem;
-        text-align: center;
+      padding-bottom: 2rem;
+      text-align: center;
+      margin: 0;
+      padding: 0;
     }
 
-    .logo-box, .nav-links {
-        /*width: 100%;*/
-        margin: .3rem auto 0;
+    .logo-box {
+      width: 100%;
+      margin: .3rem auto 0;
+      display: block;
+      padding: 0;
     }
 
     .logo {
-        font-size: 1.7em;
+      font-size: 1.7em;
     }
 
     .sub-logo {
-        width: 100%;
-        padding: 0;
+      width: 100%;
+      padding: 0;
     }
 
     .sub-logo, .nav-links {
-        font-size: .9em;
+      font-size: .9em;
     }
 
     .nav-links {
-        margin: 0;
-        float: right;
-        display: inline-block;
+      float: none;
+      /*width: 100%;*/
+      padding: 0;
+      display: inline-block;
     }
 
-    .nav-links a {
-        padding-top: 0;
-        padding-bottom: 0;
-        line-height: 2em;
+    .show-menu {
+      margin: 1rem 0 1rem;
+      padding: .6rem 1rem;
+      display: block;
+      margin-bottom: .5rem;
+      /*border: 2px solid white;*/
+      /*border-bottom: double white;*/
+      border-bottom: 2px solid white;
+    }
+
+    #menu {
+      display: none;
+    }
+
+    #menu li {
+      display: block;
+    }
+
+    /* HEADER TRANSITIONS */
+    nav:hover div, .nav-links:hover li,
+    nav div:hover, .nav-links li:hover {
+        opacity: 1;
     }
 }
