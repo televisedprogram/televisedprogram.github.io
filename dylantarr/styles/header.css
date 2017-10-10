@@ -112,7 +112,7 @@ nav div:hover, .nav-links li:hover {
     }
 
     .logo-box {
-      /*width: 40%;*/
+      width: 40%;
       margin: .3rem auto 0;
       display: inline-block;
       padding: 0;
@@ -123,7 +123,7 @@ nav div:hover, .nav-links li:hover {
     }
 
     .sub-logo {
-      width: 100%;
+      /*width: 100%;*/
       padding: 0;
     }
 
@@ -132,36 +132,36 @@ nav div:hover, .nav-links li:hover {
     }
 
     .nav-links {
-      float: none;
-      /*width: 100%;*/
-      padding: 0;
-      display: inline-block;
+      display: inline;
     }
 
     .show-menu {
       margin: 1rem .5rem;
       padding: .6rem 1rem;
-      display: block;
-      margin-bottom: .5rem;
+      display: inline-block;
+      /*margin-bottom: .5rem;*/
       /*border: 2px solid white;*/
       /*border-bottom: double white;*/
       /*width: 30%;*/
       border-bottom: 2px solid white;
+      width: 20%;
     }
 
     #menu {
-      /*position: relative;*/
-      display: block;
+      margin: auto;
       width: 100%;
+      text-align: right;
     }
 
     #menu li {
+      margin: auto;
       display: block;
+      text-align: right;
     }
 
     input[type=checkbox] ~ #menu {
       visibility: hidden; /* hides sub-menu */
-      display: block;
+      /*display: block;*/
       opacity: 0;
       height: 0;
       transition: all .5s ease 0s, visibility .5s linear 0s;
