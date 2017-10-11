@@ -41,12 +41,25 @@ section h1 {
     width: 90%;
 }
 
+.bio figure {
+  width: 30%;
+}
+
 .bio img {
-    width: 30%;
+    width: 100%;
     float: left;
     display: block;
-    margin-left: 10%;
-    margin-bottom: 2rem;
+    margin-left: 40%;
+}
+
+figcaption {
+  font-family: 'Muli', sans-serif;
+  display: inline-block;
+  color: #aaa;
+  width: 100%;
+  margin: 0 0 1rem 40%;
+  float: left;
+  text-align: center;
 }
 
 .bio .bio-text {
@@ -67,16 +80,28 @@ section h1 {
         min-width: 320px;
     }
 
+    .bio figure {
+      width: 100%;
+      margin: auto;
+    }
+
     .bio img {
         margin: 1rem auto;
         text-align: center;
-        float: initial;
-        width: 65%;
+        float: inherit;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    figcaption {
+      margin: 0 auto 1rem;
+      width: 100%;
     }
 
     .bio .bio-text {
         width: 100%;
         padding: 0;
+        margin: 1.5rem 0 0;
         display: inline-block;
     }
 
